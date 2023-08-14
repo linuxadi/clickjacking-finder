@@ -11,8 +11,42 @@ Clickjacking Finder is a powerful tool designed to enhance web security by ident
 - Customize output options to display relevant details.
 
 
+## Installation
 
+1. Clone this repository:
 
+   ```bash
+   git clone https://github.com/linuxadi/clickjacking-finder.git
+   ```
 
+2. Install the required dependencies:
 
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+## Usage
+
+```bash
+python CjFinder.py domains.txt --all
+```
+
+Replace `domains.txt` with the name of your input file containing the list of domains to scan.
+
+## Options
+
+- `--all`: Scan for all vulnerabilities (equivalent to `--vulnerable`, `--show-title`, and `--status-code`).
+- `--vulnerable`: Show vulnerable sites.
+- `--show-title`: Display webpage titles.
+- `--status-code`: Show HTTP status codes.
+
+## Contributions
+
+Contributions are welcome! If you find a bug or have an enhancement in mind, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+Designed with ❤️ by Aditya singh 
