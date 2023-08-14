@@ -16,13 +16,13 @@ def check(url):
         headers = data.info()
 
         if not "X-Frame-Options" in headers:
-            return True, data.getcode() 
+            return True, data.getcode()
 
     except HTTPError as e:
-        return False, e.code 
+        return False, e.code
 
     except URLError:
-        return False, None  
+        return False, None
 
     return False, None
 
@@ -42,7 +42,7 @@ def get_page_title(url):
 def main():
     try:
         if len(sys.argv) < 2:
-            print("[*] Usage: python(3) clickjacking_tester.py <file_name> [--vulnerable] [--show-title] [--status-code]")
+            print("[*] Usage: python(3) clickjacking_tester.py <file_name> [--all] [--vulnerable] [--show-title] [--status-code]")
             sys.exit(1)
 
         file_name = sys.argv[1]
@@ -52,12 +52,16 @@ def main():
         show_title = False
         show_status_code = False
 
-        valid_flags = {'--vulnerable', '--show-title', '--status-code'}
+        valid_flags = {'--all', '--vulnerable', '--show-title', '--status-code'}
         user_flags = set(sys.argv[2:])
 
         if '--help' in user_flags:
             print("Usage: python(3) clickjacking_tester.py <file_name> [options]")
             sys.exit(0)
+
+        if '--all' in user_flags:
+            user_flags.remove('--all')
+            user_flags.update(valid_flags)
 
         invalid_flags = user_flags - valid_flags
         if invalid_flags:
