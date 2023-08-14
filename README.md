@@ -1,3 +1,18 @@
-# clickjacking-finder
-Clickjacking Finder: Enhance Web Security by Identifying Clickjacking Vulnerabilities.
-Clickjacking Finder is a powerful tool designed to bolster your web security efforts. By quickly and efficiently scanning multiple domains in a single run, this tool helps you identify potential clickjacking vulnerabilities that could compromise your website's security. Safeguard your online presence with Clickjacking Finder and fortify your defenses against malicious attacks.
+# Clickjacking Finder
+
+Clickjacking Finder is a powerful tool designed to enhance web security by identifying clickjacking vulnerabilities across multiple domains simultaneously.
+
+![Clickjacking Finder Logo](https://github.com/linuxadi/clickjacking-finder/blob/main/clickjacking.webp)
+
+## Features
+
+- Quickly scan multiple domains for clickjacking vulnerabilities.
+- Detect vulnerable sites and provide detailed vulnerability information.
+- Customize output options to display relevant details.
+
+## Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/yourusername/clickjacking-finder.git
