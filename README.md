@@ -28,7 +28,7 @@ Clickjacking Finder is a powerful tool designed to enhance web security by ident
 ## Usage
 
 ```bash
-python CjFinder.py domains.txt --all
+python3 CjFinder.py domains.txt --all
 ```
 
 Replace `domains.txt` with the name of your input file containing the list of domains to scan.
