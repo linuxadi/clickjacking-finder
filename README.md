@@ -85,10 +85,6 @@ python3 CjFinder.py domains.txt
   </a>
 </div>
 
-## Contributions
-
-Contributions are welcome! If you find a bug or have an enhancement in mind, please open an issue or submit a pull request.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
