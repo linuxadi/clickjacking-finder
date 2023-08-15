@@ -36,12 +36,20 @@ Replace `domains.txt` with the name of your input file containing the list of do
 ## Demo: Using Clickjacking Finder without Any Flags
 
 <div style="text-align: center;">
-  <p>Here's a demo of using Clickjacking Finder without any flags. </p>
-  <a href="https://github.com/linuxadi/linuxadi/blob/main/imports/without-any-flag.gif">
-    <img src="https://github.com/linuxadi/linuxadi/raw/main/imports/without-any-flag.gif" alt="Clickjacking Finder Demo" width="75%">
+  <p>Here's a demo of using Clickjacking Finder without any flags:</p>
+  <a href="https://github.com/linuxadi/linuxadi/raw/main/imports/without%20any%20flag.gif">
+    <img src="https://github.com/linuxadi/linuxadi/raw/main/imports/without%20any%20flag.gif" alt="Clickjacking Finder Demo" width="50%">
   </a>
 </div>
 
+## Demo: Using Clickjacking Finder with All Flags or --vulnerable, --show-title, and --status-code 
+
+<div style="text-align: center;">
+  <p>Here's a demo of using Clickjacking Finder with <code>--vulnerable</code>, <code>--show-title</code>, and <code>--status-code</code> flags. Click the video below to watch the demonstration:</p>
+  <a href="https://github.com/linuxadi/linuxadi/blob/main/imports/with%20all%20flag.mp4">
+    <img src="https://github.com/linuxadi/linuxadi/raw/main/imports/with%20all%20flag.gif" alt="Clickjacking Finder Demo with All Flags" width="50%">
+  </a>
+</div>
 
 
 ## Options
