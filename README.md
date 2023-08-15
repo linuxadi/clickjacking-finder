@@ -45,9 +45,9 @@ Replace `domains.txt` with the name of your input file containing the list of do
 ## Demo: Using Clickjacking Finder with All Flags or --vulnerable, --show-title, and --status-code 
 
 <div style="text-align: center;">
-  <p>Here's a demo of using Clickjacking Finder with <code>--vulnerable</code>, <code>--show-title</code>, and <code>--status-code</code> flags. Click the video below to watch the demonstration:</p>
-  <a href="https://github.com/linuxadi/linuxadi/blob/main/imports/with%20all%20flag.mp4">
-    <img src="https://github.com/linuxadi/linuxadi/raw/main/imports/with%20all%20flag.gif" alt="Clickjacking Finder Demo with All Flags" width="50%">
+  <p>Here's a demo of using Clickjacking Finder with <code>--vulnerable</code>, <code>--show-title</code>, and <code>--status-code</code> flags. </p>
+  <a href="https://github.com/linuxadi/linuxadi/blob/main/imports/with-all-flags.gif">
+    <img src="https://github.com/linuxadi/linuxadi/blob/main/imports/with-all-flags.gif" alt="Clickjacking Finder Demo with All Flags" width="50%">
   </a>
 </div>
 
