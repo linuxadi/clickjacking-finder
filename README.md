@@ -33,6 +33,10 @@ python3 CjFinder.py domains.txt
 
 Replace `domains.txt` with the name of your input file containing the list of domains to scan.
 
+#Here's the output you can expect when running the tool without any flags:
+[Watch the Video](https://github.com/linuxadi/linuxadi/blob/main/imports/without%20any%20flag.mp4)
+
+
 ## Options
 
 - `--all`: Scan for all vulnerabilities (equivalent to `--vulnerable`, `--show-title`, and `--status-code`).
