@@ -59,6 +59,32 @@ Replace `domains.txt` with the name of your input file containing the list of do
 - `--show-title`: Display webpage titles.
 - `--status-code`: Show HTTP status codes.
 
+ ## clickjacking Testing Guidance with Clickjacking Finder
+- If you want to test Clickjacking vulnerabilities using Clickjacking Finder,first enumerate the subdomain with httpx-toolkit :
+
+ # Step
+   ```bash
+   subfinder -d example.com | httpx-toolkit | tee domain.txt
+```
+
+- Now after your domain list is ready, test it for clickjacking vulnerability with the clickjacking-finder tool.
+
+```bash
+python3 CjFinder.py domains.txt 
+```
+## You can set a custom flag
+-   `--vulnerable` just to see the vulnerable site result from clickjacking
+-  ` --show-title ` To see the title of the website page
+-  `--status-code ` Current status code of the website so that we can know who is on running status and who is not If the website will be on 404 Delete or 403, or 401 Unauthorized, then we ignore it so that our time is not wasted.
+
+-  After running the command, you'll receive an output indicating vulnerable URLs. This output will help you identify whether your Clickjacking PoC successfully exploited the vulnerability.
+
+<div style="text-align: center;">
+  <a href="https://github.com/linuxadi/linuxadi/blob/main/imports/final%20result.gif">
+    <img src="https://github.com/linuxadi/linuxadi/blob/main/imports/final%20result.gif" alt="Clickjacking Vulnerability Test Demo" width="50%">
+  </a>
+</div>
+
 ## Contributions
 
 Contributions are welcome! If you find a bug or have an enhancement in mind, please open an issue or submit a pull request.
